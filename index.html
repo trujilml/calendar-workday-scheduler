@@ -4,20 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="/Develop/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -31,31 +20,102 @@
     
     <div class="container">
       <!-- Timeblocks go here -->
-      <div class="col-sm-12 bg-dark text-light">
+
 
         <div id="eightoclock" class="row time-block">
-          <div class="col-md-1 hour">
+          <div class="col-1 hour p-3">
           8AM
           </div>
         <textarea class="col-md-10 description">
         </textarea>
-        <button class="saveBtn col-md-1" title="Save this to be done by 8:00 am."><i class="fas fa-save"></i></button>
+        <button class="saveBtn col-1" title="Save this to be done by 8:00 am."><i class="fas fa-save"></i></button>
+        </div>
+
+        <div id="nineoclock" class="row time-block">
+          <div class="col-1 hour p-3">
+          9AM
+          </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="saveBtn col-1" title="Save this to be done by 9:00 am."><i class="fas fa-save"></i></button>
+        </div>
+
+        <div id="tenoclock" class="row time-block">
+          <div class="col-1 hour p-3">
+          10AM
+          </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="saveBtn col-1" title="Save this to be done by 10:00 am."><i class="fas fa-save"></i></button>
         </div>
 
 
+        <div id="elevenoclock" class="row time-block">
+          <div class="col-1 hour p-3">
+          11AM
+          </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="saveBtn col-1" title="Save this to be done by 11:00 am."><i class="fas fa-save"></i></button>
+        </div>
+     
 
-      <p id = "time">9 AM</p>
-      <p id = "time">10 AM</p>
-      <p id = "time">11 AM</p>
-      <p id = "time">12 PM</p>
-      <p id = "time">1 PM</p>
-      <p id = "time">2 PM</p>
-      <p id = "time">3 PM</p>
-      <p id = "time">4 PM</p>
-      <p id = "time">5 PM</p>
-    </div>
-    </div>
+        <div id="twelveoclock" class="row time-block">
+          <div class="col-1 hour p-3">
+          12PM
+          </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="saveBtn col-1" title="Save this to be done by 12:00 pm."><i class="fas fa-save"></i></button>
+        </div>
+
+        <div id="oneoclock" class="row time-block">
+          <div class="col-1 hour p-3">
+          1PM
+          </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="saveBtn col-1" title="Save this to be done by 1:00 pm."><i class="fas fa-save"></i></button>
+        </div>
+  
+        <div id="twooclock" class="row time-block">
+          <div class="col-1 hour p-3">
+          2PM
+          </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="saveBtn col-1" title="Save this to be done by 2:00 pm."><i class="fas fa-save"></i></button>
+        </div>
+
+        <div id="threeoclock" class="row time-block">
+          <div class="col-1 hour p-3">
+          3PM
+          </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="saveBtn col-1" title="Save this to be done by 3:00 pm."><i class="fas fa-save"></i></button>
+        </div>
+
+        <div id="fouroclock" class="row time-block">
+          <div class="col-1 hour p-3">
+          4PM
+          </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="saveBtn col-1" title="Save this to be done by 4:00 pm."><i class="fas fa-save"></i></button>
+        </div>
+    
+        <div id="fiveoclock" class="row time-block">
+          <div class="col-1 hour p-3">
+          5PM
+          </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="saveBtn col-1" title="Save this to be done by 5:00 pm."><i class="fas fa-save"></i></button>
+        </div>
   </div>
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
