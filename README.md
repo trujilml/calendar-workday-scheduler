@@ -1,5 +1,10 @@
 # Calendar Workday Scheduler
 
+# Application Scenario
+
+* runs on a 8am to 5pm average workday
+
+
 ## User Story
 AS AN employee with a busy schedule
 I WANT to add important events to a daily planner
