@@ -3,6 +3,7 @@
 # Application Scenario
 
 * runs on a 8am to 5pm average workday
+* user saves particular reminder to their time frame 
 
 
 ## User Story
@@ -29,6 +30,7 @@ THEN the saved events persist -
 * HTML
 * JavaScript
 * CSS
-* Web APIs for local storage
+* jQuery was used to retrieve local
 * Bootstrap for design elements
 * Moment.js/other time library for setting up primary date, time and day elements for the daily calendar planner
+* Overall use of Web APIs
