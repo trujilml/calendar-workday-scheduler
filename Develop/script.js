@@ -1,3 +1,6 @@
+// document function presents current day id as the date format using moment, followed by the save function being implemented 
+// with its variables attached by the description from the text-area part of the planner and the id representing the time hour. both are set to a user's local storage
+
 $(document).ready(function() {
     $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm a"));
 
@@ -8,6 +11,7 @@ $(document).ready(function() {
     localStorage.setItem(timeDue, savedTaskToDo);
 })
 
+//retrieval of stored timehour elements saved on the user's local storage
 $("#timehour-8 .description").val(localStorage.getItem("timehour-8"));
 $("#timehour-9 .description").val(localStorage.getItem("timehour-9"));
 $("#timehour-10 .description").val(localStorage.getItem("timehour-10"));
@@ -20,6 +24,8 @@ $("#timehour-16 .description").val(localStorage.getItem("timehour-16"));
 $("#timehour-17 .description").val(localStorage.getItem("timehour-17"));
 
 
+//current hour function retrieves current time of the work day, implements css elements that determine whether a to-do is late ("past"),
+//due ("present"), and to be done by ("future"). function reruns at the end,
 function getCurrentHour() {
     var currentHour = moment().hour();
 

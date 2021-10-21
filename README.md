@@ -34,3 +34,7 @@ THEN the saved events persist -
 * Bootstrap for design elements
 * Moment.js/other time library for setting up primary date, time and day elements for the daily calendar planner
 * Overall use of Web APIs
+
+## Links to Repository and Website
+* GitHub Repository: https://github.com/trujilml/calendar-workday-scheduler 
+* Deployed Link: https://trujilml.github.io/calendar-workday-scheduler/ 
