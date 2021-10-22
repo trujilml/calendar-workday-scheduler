@@ -1,42 +1,24 @@
 # Calendar Workday Scheduler
 
 ## Application Description
-This 
-
-* runs on a 8am to 5pm average workday
-* user saves particular reminder to their time frame 
-
-
-## User Story
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-
-## Acceptance Criteria
-GIVEN I am using a daily planner to create a schedule -
-WHEN I open the planner -
-THEN the current day is displayed at the top of the calendar -
-WHEN I scroll down - 
-THEN I am presented with time blocks for standard business hours -
-WHEN I view the time blocks for that day -
-THEN each time block is color-coded to indicate whether it is in the past, present, or future -
-WHEN I click into a time block -
-THEN I can enter an event -
-WHEN I click the save button for that time block -
-THEN the text for that event is saved in local storage -
-WHEN I refresh the page -
-THEN the saved events persist -
+This is a simple weekday planner application that presents a daily hour schedule for an average workday (running from 8am to 5pm). It provides the user with several time-blocks that, if clicked, can turn into a text area, and the user is allowed to type and enter their intended to-do task for their particular event to be completed by that time. The user then saves their event with the saved button which is kept in the user's browser and stays there even when the page is refreshed or not accessed until the next day. With the average workday time taken from the user's local time, specific hours can present itself as being in the past (displayed as a grey colored time-block), present (displayed as a red colored time-block), and future (displayed as a green colored time-block). This is presented in order for the user to understand when their task was expected to be done previously ("past"), now ("present"), and in the later hours of their workday ("future").
 
 ## Application developed with
 * HTML
 * JavaScript
 * CSS
-* jQuery – used to establish save element and implements feature of time blocks at different time of the day
-* Bootstrap for the site's main design 
-* Day.js - to implement time save format 
-* Moment.js - CDN library 
+* jQuery – used to establish formatted Moment.js date, save button element, local storage that saves the user's task, and alongside Day.js, has function retrieve time status of the time blocks with their time status
+* Bootstrap - used for the site's main design and implements mobile responsive design to be used on mobile or desktop
+* Day.js - used in the function that retrieves the current hour, saved time format, and worked in the presentation of the time blocks 
+* Moment.js - used to show the formatted date and time below the header
 * Overall use of Web APIs to identify function errors and ensure the workday scheduler was working correctly.
 
 ## Links to Repository and Website
 * GitHub Repository: https://github.com/trujilml/calendar-workday-scheduler 
 * Deployed Link: https://trujilml.github.io/calendar-workday-scheduler/ 
+
+## Screenshots
+First screenshot demonstrates a blank workday schedule showing all the time-blocks with their different colored formats while the second and third screenshot presents the multiple tasks on the planner and that have been saved on the user's local storage.
+![Screenshot 1](./Develop/screenshots/calendar-workday-scheduler1.png) 
+![Screenshot 2](./Develop/screenshots/calendar-workday-scheduler2.png) 
+![Screenshot 3](./Develop/screenshots/calendar-workday-scheduler3.png) 

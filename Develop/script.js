@@ -5,12 +5,10 @@
 
 
 $(document).ready(function() {
-    $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm a"));
+    $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm a")); //moment.js
 
-
-    dayjs("#currentDay").format("{YYYY} MM-DDTHH:mm:ss SSS [Z] A");
+    dayjs("#currentDay").format("{YYYY} MM-DDTHH:mm:ss SSS [Z] A"); //day.js
     
-
     $(".saveBtn").on("click",function() {
     var savedTaskToDo = $(this).siblings(".description").val();
     var timeDue = $(this).parent().attr("id");
@@ -35,10 +33,10 @@ $("#timehour-17 .description").val(localStorage.getItem("timehour-17"));
 //implements css elements that determine whether a to-do is late ("past"),
 //due ("present"), and to be done by ("future"). function reruns at the end,
 function getCurrentHour() {
-    var currentHour = dayjs().hour();
+    var currentHour = dayjs().hour(); //day.js
 
-    $(".time-block").each(function () {
-        var hourOfWorkTime = parseInt($(this).attr("id").split("timehour-")[1]);
+    $(".time-block").each(function () { //jquery
+        var hourOfWorkTime = parseInt($(this).attr("id").split("timehour-")[1]); 
 
         if (hourOfWorkTime < currentHour) {
             $(this).addClass("past");
