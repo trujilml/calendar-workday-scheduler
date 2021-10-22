@@ -7,6 +7,7 @@
 $(document).ready(function() {
     $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm a"));
 
+
     dayjs("#currentDay").format("{YYYY} MM-DDTHH:mm:ss SSS [Z] A");
     
 
