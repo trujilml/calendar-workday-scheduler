@@ -1,8 +1,14 @@
-// document function presents current day id as the date format using moment, followed by the save function being implemented 
-// with its variables attached by the description from the text-area part of the planner and the id representing the time hour. both are set to a user's local storage
+// document function presents current day id with the date format using moment.js, 
+// day.js is implemented to illustrate the format and is mainly used for the time retrieval of the getCurrentHour function.
+// the save button is implemented with its variables attached by the description from the text-area part of the planner 
+// and the id representing the time hour. both are set to a user's local storage by the set item added on.
+
 
 $(document).ready(function() {
     $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm a"));
+
+    dayjs("#currentDay").format("{YYYY} MM-DDTHH:mm:ss SSS [Z] A");
+    
 
     $(".saveBtn").on("click",function() {
     var savedTaskToDo = $(this).siblings(".description").val();
@@ -11,7 +17,7 @@ $(document).ready(function() {
     localStorage.setItem(timeDue, savedTaskToDo);
 })
 
-//retrieval of stored timehour elements saved on the user's local storage
+//retrieval of stored timehour elements saved on the user's local storage using getitem
 $("#timehour-8 .description").val(localStorage.getItem("timehour-8"));
 $("#timehour-9 .description").val(localStorage.getItem("timehour-9"));
 $("#timehour-10 .description").val(localStorage.getItem("timehour-10"));
@@ -24,10 +30,11 @@ $("#timehour-16 .description").val(localStorage.getItem("timehour-16"));
 $("#timehour-17 .description").val(localStorage.getItem("timehour-17"));
 
 
-//current hour function retrieves current time of the work day, implements css elements that determine whether a to-do is late ("past"),
+//rest of function runs on day.js and jquery function. current hour function retrieves current time of the work day by hour in a 24-hour clock time format, 
+//implements css elements that determine whether a to-do is late ("past"),
 //due ("present"), and to be done by ("future"). function reruns at the end,
 function getCurrentHour() {
-    var currentHour = moment().hour();
+    var currentHour = dayjs().hour();
 
     $(".time-block").each(function () {
         var hourOfWorkTime = parseInt($(this).attr("id").split("timehour-")[1]);
@@ -49,8 +56,7 @@ function getCurrentHour() {
 
 getCurrentHour();
 
-})
-
+});
 
 
 

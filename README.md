@@ -1,6 +1,7 @@
 # Calendar Workday Scheduler
 
-# Application Scenario
+## Application Description
+This 
 
 * runs on a 8am to 5pm average workday
 * user saves particular reminder to their time frame 
@@ -26,14 +27,15 @@ THEN the text for that event is saved in local storage -
 WHEN I refresh the page -
 THEN the saved events persist -
 
-## Developed with
+## Application developed with
 * HTML
 * JavaScript
 * CSS
-* jQuery was used to retrieve local
-* Bootstrap for design elements
-* Moment.js/other time library for setting up primary date, time and day elements for the daily calendar planner
-* Overall use of Web APIs
+* jQuery – used to establish save element and implements feature of time blocks at different time of the day
+* Bootstrap for the site's main design 
+* Day.js - to implement time save format 
+* Moment.js - CDN library 
+* Overall use of Web APIs to identify function errors and ensure the workday scheduler was working correctly.
 
 ## Links to Repository and Website
 * GitHub Repository: https://github.com/trujilml/calendar-workday-scheduler 
